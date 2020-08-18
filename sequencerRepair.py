@@ -13,9 +13,5 @@ list_of_shots = pm.ls(type="shot")
 for index, shot in enumerate(list_of_shots):
     shot.message.disconnect()
     shot.message.connect(sequencer.shots[index])
-    try:
-        manager.sequences[index].disconnect()
-    except:
-        pass
 
 sequencer.message.connect(manager.sequences[0])
