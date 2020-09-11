@@ -1,0 +1,100 @@
+[
+    {
+        "assets": [
+            {
+                "id": 1586,
+                "name": "alice",
+                "type": "Asset"
+            },
+            {
+                "id": 1589,
+                "name": "botDog",
+                "type": "Asset"
+            },
+            {
+                "id": 1608,
+                "name": "botDogCable",
+                "type": "Asset"
+            },
+            {
+                "id": 2121,
+                "name": "dartInterior",
+                "type": "Asset"
+            },
+            {
+                "id": 1605,
+                "name": "hotDogs",
+                "type": "Asset"
+            },
+            {
+                "id": 1587,
+                "name": "kim",
+                "type": "Asset"
+            },
+            {
+                "id": 1591,
+                "name": "leo",
+                "type": "Asset"
+            }
+        ],
+        "id": 140,
+        "shots": [
+            {
+                "id": 1377,
+                "name": "e105_drt010_0010",
+                "type": "Shot"
+            },
+            {
+                "id": 1378,
+                "name": "e105_drt010_0020",
+                "type": "Shot"
+            },
+            {
+                "id": 1379,
+                "name": "e105_drt010_0030",
+                "type": "Shot"
+            },
+            {
+                "id": 1380,
+                "name": "e105_drt010_0040",
+                "type": "Shot"
+            },
+            {
+                "id": 1381,
+                "name": "e105_drt010_0050",
+                "type": "Shot"
+            },
+            {
+                "id": 1382,
+                "name": "e105_drt010_0060",
+                "type": "Shot"
+            },
+            {
+                "id": 1383,
+                "name": "e105_drt010_0070",
+                "type": "Shot"
+            },
+            {
+                "id": 1384,
+                "name": "e105_drt010_0080",
+                "type": "Shot"
+            },
+            {
+                "id": 1385,
+                "name": "e105_drt010_0090",
+                "type": "Shot"
+            },
+            {
+                "id": 1386,
+                "name": "e105_drt010_0100",
+                "type": "Shot"
+            },
+            {
+                "id": 1387,
+                "name": "e105_drt010_0110",
+                "type": "Shot"
+            }
+        ],
+        "type": "Sequence"
+    }
+]

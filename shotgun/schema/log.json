@@ -1,0 +1,4023 @@
+{
+    "addressings_cc": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cc"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Group",
+                    "HumanUser"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "assets": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": "A list of all Assets used in this Shot"
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Assets"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Asset"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "cached_display_name": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "text"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cached Display Name"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "regex_validation": {
+                "editable": false,
+                "value": ""
+            },
+            "regex_validation_enabled": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "code": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "text"
+        },
+        "description": {
+            "editable": true,
+            "value": "The name of each individual Shot"
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": true
+        },
+        "name": {
+            "editable": true,
+            "value": "Shot Code"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "regex_validation": {
+                "editable": true,
+                "value": ""
+            },
+            "regex_validation_enabled": {
+                "editable": true,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "created_at": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "date_time"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Date Created"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "created_by": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Created by"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "HumanUser",
+                    "ApiUser"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "cut_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Cut Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "cut_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Cut In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "cut_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Cut Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "description": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "text"
+        },
+        "description": {
+            "editable": true,
+            "value": "A description of each individual Shot"
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Description"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "regex_validation": {
+                "editable": true,
+                "value": ""
+            },
+            "regex_validation_enabled": {
+                "editable": true,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "filmstrip_image": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "image"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Filmstrip Thumbnail"
+        },
+        "properties": {
+            "allowed_render_methods": {
+                "editable": false,
+                "value": null
+            },
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "image_sorts": {
+                "editable": false,
+                "value": null
+            },
+            "image_use_query": {
+                "editable": false,
+                "value": false
+            },
+            "render_method": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "head_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Head Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "head_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Head In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "head_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Head Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "id": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Id"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "image": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "image"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Thumbnail"
+        },
+        "properties": {
+            "allowed_render_methods": {
+                "editable": false,
+                "value": [
+                    "use_uploaded_image",
+                    "use_image_query"
+                ]
+            },
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "image_sorts": {
+                "editable": false,
+                "value": [
+                    {
+                        "column": "created_at",
+                        "direction": "desc"
+                    }
+                ]
+            },
+            "image_use_query": {
+                "editable": false,
+                "value": true
+            },
+            "render_method": {
+                "editable": false,
+                "value": "use_image_query"
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "image_source_entity": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Image Source Entity"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": false,
+                "value": [
+                    "ActionMenuItem",
+                    "ApiUser",
+                    "ApiUserProjectConnection",
+                    "AppWelcomeUserConnection",
+                    "Asset",
+                    "AssetAssetConnection",
+                    "AssetBlendshapeConnection",
+                    "AssetElementConnection",
+                    "AssetEpisodeConnection",
+                    "AssetLevelConnection",
+                    "AssetMocapTakeConnection",
+                    "AssetSceneConnection",
+                    "AssetSequenceConnection",
+                    "AssetShootDayConnection",
+                    "AssetShotConnection",
+                    "Asset_sg_vendor_groups_Connection",
+                    "Attachment",
+                    "BannerUserConnection",
+                    "Blendshape",
+                    "Booking",
+                    "Camera",
+                    "CameraMocapTakeConnection",
+                    "Camera_sg_assets_Connection",
+                    "ClientUser",
+                    "Composition",
+                    "CustomEntity30",
+                    "CustomNonProjectEntity01",
+                    "CustomNonProjectEntity08",
+                    "CustomNonProjectEntity10",
+                    "CustomNonProjectEntity12",
+                    "Cut",
+                    "CutItem",
+                    "CutVersionConnection",
+                    "Delivery",
+                    "Department",
+                    "ElementShotConnection",
+                    "Episode",
+                    "EventLogEntry",
+                    "FilesystemLocation",
+                    "Group",
+                    "GroupUserConnection",
+                    "HumanUser",
+                    "Icon",
+                    "LaunchSceneConnection",
+                    "LaunchShotConnection",
+                    "Launch_sg_vendor_groups_Connection",
+                    "Level",
+                    "LocalStorage",
+                    "MocapTakeRangeShotConnection",
+                    "Note",
+                    "Page",
+                    "PageHit",
+                    "PageSetting",
+                    "PerformerMocapTakeConnection",
+                    "PerformerRoutineConnection",
+                    "PerformerShootDayConnection",
+                    "PermissionRuleSet",
+                    "Phase",
+                    "PhysicalAssetMocapTakeConnection",
+                    "PipelineConfiguration",
+                    "PipelineConfigurationUserConnection",
+                    "Playlist",
+                    "PlaylistShare",
+                    "PlaylistVersionConnection",
+                    "Project",
+                    "ProjectTaskTemplateConnection",
+                    "ProjectUserConnection",
+                    "PublishedFile",
+                    "PublishedFileDependency",
+                    "PublishedFileType",
+                    "PublishedFile_sg_deliveries_Connection",
+                    "PublishedFile_sg_dependency_deliveries_Connection",
+                    "Release",
+                    "ReleaseTicketConnection",
+                    "Reply",
+                    "Revision",
+                    "RevisionRevisionConnection",
+                    "RevisionTicketConnection",
+                    "RvLicense",
+                    "Sequence",
+                    "Sequence_sg_vendor_groups_Connection",
+                    "ShootDaySceneConnection",
+                    "Shot",
+                    "ShotShotConnection",
+                    "Shot_sg_vendor_groups_Connection",
+                    "Software",
+                    "Status",
+                    "Step",
+                    "Tag",
+                    "Task",
+                    "TaskDependency",
+                    "TaskTemplate",
+                    "Ticket",
+                    "TicketTicketConnection",
+                    "TimeLog",
+                    "Version",
+                    "Version_sg_deliveries_Connection"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "notes": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Notes"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Note"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "open_notes": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Open Notes"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Note"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "open_notes_count": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "summary"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Open Notes Count"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "query": {
+                "editable": false,
+                "value": {
+                    "entity_type": "Note",
+                    "filters": {
+                        "conditions": [
+                            {
+                                "path": "note_links",
+                                "relation": "is",
+                                "values": [
+                                    {
+                                        "id": 0,
+                                        "name": "Current Entity",
+                                        "type": "Entity",
+                                        "valid": "parent_entity_token"
+                                    }
+                                ]
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "path": "sg_status_list",
+                                        "relation": "is",
+                                        "values": [
+                                            "opn"
+                                        ]
+                                    },
+                                    {
+                                        "path": "sg_status_list",
+                                        "relation": "is",
+                                        "values": [
+                                            "ip"
+                                        ]
+                                    },
+                                    {
+                                        "path": "sg_status_list",
+                                        "relation": "is",
+                                        "values": [
+                                            "rdy"
+                                        ]
+                                    }
+                                ],
+                                "logical_operator": "or"
+                            }
+                        ],
+                        "logical_operator": "and"
+                    }
+                }
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "record_count"
+            },
+            "summary_field": {
+                "editable": false,
+                "value": "id"
+            },
+            "summary_value": {
+                "editable": false,
+                "value": null
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "parent_shots": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Parent Shots"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Shot"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "project": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Project"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Project"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_breakdowns": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Breakdown <-> Shot"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": false,
+                "value": [
+                    "CustomEntity30"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "sg_cut_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "sum"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_cut_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "sum"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_cut_order": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut Order"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_cut_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "sum"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_head_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Head In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "sg_published_files": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Published File <-> Link"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": false,
+                "value": [
+                    "PublishedFile"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "sg_sequence": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Sequence"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Sequence"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_shot_type": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "list"
+        },
+        "description": {
+            "editable": true,
+            "value": "Shot type field to indicate how this shot  is being used."
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Type"
+        },
+        "properties": {
+            "default_value": {
+                "editable": true,
+                "value": "VFX"
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_values": {
+                "editable": true,
+                "value": [
+                    "VFX",
+                    "2D",
+                    "Full CG",
+                    "Trailer",
+                    "Marketing",
+                    "Look Dev"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_status_list": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "status_list"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Status"
+        },
+        "properties": {
+            "default_value": {
+                "editable": true,
+                "value": "wtg"
+            },
+            "display_values": {
+                "editable": false,
+                "value": {
+                    "fin": "Final",
+                    "ip": "In Progress",
+                    "wtg": "Waiting to Start"
+                }
+            },
+            "hidden_values": {
+                "editable": false,
+                "value": []
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "status_list"
+            },
+            "valid_values": {
+                "editable": true,
+                "value": [
+                    "wtg",
+                    "ip",
+                    "fin"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "sg_tail_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Tail Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "sg_timelogs": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "TimeLog <-> Link"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": false,
+                "value": [
+                    "TimeLog"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "sg_vendor_groups": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Vendor Groups"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": false,
+                "value": [
+                    "Group"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "sg_versions": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Version <-> Link"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": false,
+                "value": [
+                    "Version"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "sg_working_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Working Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": true,
+            "value": true
+        }
+    },
+    "shots": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Sub Shots"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Shot"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_cut_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_cut_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_cut_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_cut_summary_display": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "text"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Cut Summary"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "regex_validation": {
+                "editable": true,
+                "value": ""
+            },
+            "regex_validation_enabled": {
+                "editable": true,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_duration_summary_display": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "text"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Duration Summary"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "regex_validation": {
+                "editable": true,
+                "value": ""
+            },
+            "regex_validation_enabled": {
+                "editable": true,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_head_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Head Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_head_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Head In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_head_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Head Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_tail_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Tail Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_tail_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Tail In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_tail_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Tail Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "smart_working_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Working Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_0": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "ALL TASKS"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_106": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Animation"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_133": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Tracking"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_134": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Roto"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_136": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Character FX"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_2": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Online"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_273": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Editorial"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_35": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Layout"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_6": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "FX"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_7": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Light"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "step_8": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "pivot_column"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Comp"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": false,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "tags": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Tags"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Tag"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "tail_duration": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Tail Duration"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "tail_in": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Tail In"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "tail_out": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "number"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Raw Tail Out"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "task_template": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Task Template"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "TaskTemplate"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "tasks": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "multi_entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": true
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Tasks"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "Task"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": false
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "time_logs_sum": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "duration"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Time Logged"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "sum"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "updated_at": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "date_time"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Date Updated"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    },
+    "updated_by": {
+        "custom_metadata": {
+            "editable": true,
+            "value": ""
+        },
+        "data_type": {
+            "editable": false,
+            "value": "entity"
+        },
+        "description": {
+            "editable": true,
+            "value": ""
+        },
+        "editable": {
+            "editable": false,
+            "value": false
+        },
+        "entity_type": {
+            "editable": false,
+            "value": "Shot"
+        },
+        "mandatory": {
+            "editable": false,
+            "value": false
+        },
+        "name": {
+            "editable": true,
+            "value": "Updated by"
+        },
+        "properties": {
+            "default_value": {
+                "editable": false,
+                "value": null
+            },
+            "summary_default": {
+                "editable": true,
+                "value": "none"
+            },
+            "valid_types": {
+                "editable": true,
+                "value": [
+                    "HumanUser",
+                    "ApiUser"
+                ]
+            }
+        },
+        "ui_value_displayable": {
+            "editable": false,
+            "value": true
+        },
+        "unique": {
+            "editable": false,
+            "value": false
+        },
+        "visible": {
+            "editable": false,
+            "value": true
+        }
+    }
+}

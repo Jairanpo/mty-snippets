@@ -1,0 +1,75 @@
+[
+    {
+        "assets": [
+            {
+                "id": 1586,
+                "name": "alice",
+                "type": "Asset"
+            },
+            {
+                "id": 2001,
+                "name": "aliceBedroom",
+                "type": "Asset"
+            },
+            {
+                "id": 1599,
+                "name": "dartHose",
+                "type": "Asset"
+            },
+            {
+                "id": 1598,
+                "name": "friendicatorAlice",
+                "type": "Asset"
+            }
+        ],
+        "id": 107,
+        "shots": [
+            {
+                "id": 1341,
+                "name": "e105_alc010_0010",
+                "type": "Shot"
+            },
+            {
+                "id": 1342,
+                "name": "e105_alc010_0020",
+                "type": "Shot"
+            },
+            {
+                "id": 1343,
+                "name": "e105_alc010_0030",
+                "type": "Shot"
+            },
+            {
+                "id": 1344,
+                "name": "e105_alc010_0040",
+                "type": "Shot"
+            },
+            {
+                "id": 1345,
+                "name": "e105_alc010_0050",
+                "type": "Shot"
+            },
+            {
+                "id": 1346,
+                "name": "e105_alc010_0060",
+                "type": "Shot"
+            },
+            {
+                "id": 1347,
+                "name": "e105_alc010_0070",
+                "type": "Shot"
+            },
+            {
+                "id": 1348,
+                "name": "e105_alc010_0080",
+                "type": "Shot"
+            },
+            {
+                "id": 1349,
+                "name": "e105_alc010_0090",
+                "type": "Shot"
+            }
+        ],
+        "type": "Sequence"
+    }
+]
