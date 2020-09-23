@@ -5,6 +5,7 @@ import pprint
 
 import maya.cmds as cmds
 import maya.mel as mel
+import pymel.core as pm
 
 
 class SequenceSplitter():
@@ -180,7 +181,7 @@ class SequenceSplitter():
 
         if data:
             publish = data[dependency_path]
-            print publish
+
             asset_entity = publish['entity']
 
             namespace = namespace or asset_entity['name']
@@ -202,27 +203,32 @@ class SequenceSplitter():
 
         return asset_entity
 
-    def export_camera(self, camera_shape, file_path, first_frame, last_frame):
+    # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+    def export_camera(self, camera_node, file_path, first_frame, last_frame):
         """
         """
+        camera_name = camera_node.name()
 
-        print file_path
+        commands = (
+            'AbcExport -verbose -j ' +
+            '"-frameRange {first_frame} {last_frame} ' +
+            '-stripNamespaces -worldSpace -writeVisibility ' +
+            '-dataFormat ogawa ' +
+            '-root {0} '.format(camera_name) +
+            '-file {file_path}"'
+        )
 
-        commands = ('AbcExport -verbose -j '
-                    '"-frameRange {first_frame} {last_frame} '
-                    '-stripNamespaces -worldSpace -writeVisibility '
-                    '-dataFormat ogawa '
-                    '-root {camera_shape} '
-                    '-file {file_path}"')
-
-        commands = commands.format(**{'camera_shape': camera_shape,
-                                      'file_path': file_path.replace('\\', '/'),
-                                      'first_frame': first_frame,
-                                      'last_frame': last_frame})
-
-        print commands
+        commands = commands.format(**{
+            'camera_shape': camera_name,
+            'file_path': file_path.replace('\\', '/'),
+            'first_frame': first_frame,
+            'last_frame': last_frame
+        })
 
         mel.eval(commands)
+
+    # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 
     def ensure_shot_entity(self, shot_name):
         """
@@ -258,9 +264,6 @@ class SequenceSplitter():
 
             context = self.tk.context_from_entity_dictionary(task)
 
-            print context
-            print context.entity
-
             self.context_by_shot_name[shot_name] = context
 
         return context
@@ -295,19 +298,16 @@ class SequenceSplitter():
 
         template_fields = shot_context.as_template_fields(template)
 
-        print template_fields
-
         sequence_fields = self.current_template_fields.copy()
         sequence_fields.update(template_fields)
         template_fields = sequence_fields
 
         # add missing "name" and "version"
         template_fields['name'] = self.current_publish_name
-        template_fields['version'] = self.get_next_maya_shot_publish_version(
-            shot_name)
-        template_fields['Shot'] = shot_name
+        template_fields['version'] = \
+            self.get_next_maya_shot_publish_version(shot_name)
 
-        print template_fields
+        template_fields['Shot'] = shot_name
 
         camera_path = template.apply_fields(template_fields)
 
@@ -353,8 +353,6 @@ class SequenceSplitter():
         # context.as_template_fields need to have folders on disk
         template_fields = shot_context.as_template_fields(template)
 
-        print template_fields
-
         sequence_fields = self.current_template_fields.copy()
         sequence_fields.update(template_fields)
         template_fields = sequence_fields
@@ -365,8 +363,6 @@ class SequenceSplitter():
         template_fields['name'] = self.current_publish_name
         template_fields['version'] = version_number
         template_fields['Shot'] = shot_name
-
-        print template_fields
 
         scene_path = template.apply_fields(template_fields)
 
@@ -407,8 +403,6 @@ class SequenceSplitter():
         publish_app = self.engine.apps.get("tk-multi-publish2")
 
         shot_context = self.get_shot_context(shot_name)
-
-        print shot_context
 
         self.engine.change_context(shot_context)
 
@@ -493,11 +487,28 @@ class SequenceSplitter():
                     reference_node, filename=True)
                 cmds.file(reference_file_path, removeReference=True)
 
+        # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        # TODO: Refactor this code, it should only be in either maya
+        # cmds or pymel.
+        # maya.cmds where getting the whole rig instead of the
+        # camera rig tranform node, switching to pymel to
+        # use the instance instead of the name.
+
         # export the current shot camera as alembic
+        pymel_shot_node = pm.ls(shot_node, type="shot")[0]
+        pymel_camera_node = pymel_shot_node.getCurrentCamera()
+        pymel_camera_node = pm.PyNode(pymel_camera_node)
+        print(pymel_camera_node)
         camera_publish_path = self.get_publish_camera_path(shot_name)
-        self.export_camera(camera_node, camera_publish_path,
-                           first_frame, last_frame)
+        self.export_camera(
+            pymel_camera_node,
+            camera_publish_path,
+            first_frame,
+            last_frame
+        )
         self.publish_camera(shot_name, camera_publish_path)
+
+        # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
         # delete animation keys outside shot range
         global_infinity_range = 999999
