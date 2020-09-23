@@ -49,20 +49,6 @@ class SequenceSplitter():
         self.tk.synchronize_filesystem_structure(full_sync=True)
         self.context = self.tk.context_from_path(self.sequence_file_path)
 
-    def get_top_references(self):
-        """ Get the current TOP references objects in the scene
-        """
-
-        top_level_reference_nodes = []
-        all_references = cmds.ls(objectsOnly=True, references=True)
-        top_level_referenced_files = cmds.file(query=True, reference=True)
-        for ref_node in all_references:
-            ref_file = cmds.referenceQuery(ref_node, filename=True)
-            if ref_file in top_level_referenced_files:
-                top_level_reference_nodes.append(ref_node)
-
-        return top_level_reference_nodes
-
     def bakeConstrains(self, startF, endF):
         """
         """
@@ -191,12 +177,17 @@ class SequenceSplitter():
                          'sg_asset': asset_entity,
                          'sg_shot': shot_entity}
 
-            filters = [['sg_asset', 'is', asset_entity],
-                       ['sg_shot', 'is', shot_entity],
-                       ['code', 'is', namespace],
-                       ['project', 'is', publish['project']]]
+            filters = [
+                ['sg_asset', 'is', asset_entity],
+                ['sg_shot', 'is', shot_entity],
+                ['code', 'is', namespace],
+                ['project', 'is', publish['project']]
+            ]
 
-            existing = self.shotgun.find_one('CustomEntity30', filters)
+            existing = \
+                self.shotgun.find_one(
+                    'CustomEntity30', filters
+                )
 
             if not existing:
                 self.shotgun.create('CustomEntity30', breakdown)
@@ -210,23 +201,20 @@ class SequenceSplitter():
         """
         camera_name = camera_node.name()
 
-        commands = (
-            'AbcExport -verbose -j ' +
-            '"-frameRange {first_frame} {last_frame} ' +
-            '-stripNamespaces -worldSpace -writeVisibility ' +
-            '-dataFormat ogawa ' +
-            '-root {0} '.format(camera_name) +
-            '-file {file_path}"'
-        )
+        mel_command = \
+            '-frameRange {0} {1} -uvWrite -worldSpace \
+                -writeVisibility -dataFormat \
+                    ogawa -root {2} -file {3}'.format(
+                first_frame,
+                last_frame,
+                camera_name,
+                file_path
+            )
 
-        commands = commands.format(**{
-            'camera_shape': camera_name,
-            'file_path': file_path.replace('\\', '/'),
-            'first_frame': first_frame,
-            'last_frame': last_frame
-        })
+        print(mel_command)
+        pm.AbcExport(j=mel_command)
 
-        mel.eval(commands)
+        # mel.eval(commands)
 
     # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 
@@ -421,91 +409,71 @@ class SequenceSplitter():
         manager.publish()
         manager.finalize()
 
-    def extract_shot(self, shot_name):
-        """destructuve process of demoved references and animation
-        from a sequence file so that only those particualry requiered
-        for an specific shot will remain in the scene
-        """
+    def extract_shot(self, shot_node_name):
 
-        shots = cmds.ls(type='shot')
-        shot_node = None
+        shot_node = pm.ls(shot_node_name, type="shot")[0]
 
-        for s in shots:
-            name = cmds.getAttr('%s.shotName' % s)
-            if name == shot_name:
-                shot_node = s
-                break
+        shot_name = shot_node.getShotName()
 
-        if not shot_node:
-            message = "Can't find a shot node with its name set to : %s"
-            raise Exception(message % shot_name)
-
-        split_string = cmds.getAttr('%s.assets' % shot_node)
-
-        # --------------------------------------------------------------------------------
+        split_string = shot_node.assets.get()
 
         requiered_nodes = []
 
         if split_string is not None:
-            requiered_nodes.extend(cmds.getAttr(
-                '%s.assets' % shot_node).split(';'))
+            requiered_nodes.extend(split_string.split(";"))
 
         # --------------------------------------------------------------------------------
 
         # collect info from shot node
-        camera_shape = cmds.shot(shot_node, query=True, currentCamera=True)
-        camera_reference = cmds.referenceQuery(
-            camera_shape, referenceNode=True)
-        camera_node = cmds.listRelatives(camera_shape, parent=True)[0]
+        camera_shape = pm.PyNode(shot_node.getCurrentCamera())
+        camera_reference = pm.referenceQuery(camera_shape, referenceNode=True)
+        camera_node = None
+
+        if isinstance(camera_shape, pm.nt.Camera):
+            camera_node = camera_shape.getParent()
+        else:
+            camera_node = camera_shape
 
         # collect dependencies
         requiered_nodes.append(camera_reference)
-        gpu_cache_nodes = cmds.ls(type='gpuCache')
-        top_reference_nodes = self.get_top_references()
+        top_reference_nodes = pm.listReferences(recursive=False)
 
         # delete all the shot nodes different that current shot
-        for shot in cmds.ls(type='shot'):
-            if shot != shot_node:
-                cmds.delete(shot)
+        for shot_element in pm.ls(type='shot'):
+            if shot_element != shot_node:
+                pm.delete(shot_element)
 
         # delete all the gpu nodes if they are not required
+        gpu_cache_nodes = pm.ls(type='gpuCache')
         for gpu_cache in gpu_cache_nodes:
-            gpu_cache = cmds.listRelatives(gpu_cache, parent=True)
-            if gpu_cache and gpu_cache[0] not in requiered_nodes:
-                cmds.delete(gpu_cache)
-        # get first and last frame for the shot
-        first_frame = cmds.shot(shot_node, query=True, startTime=True)
-        last_frame = cmds.shot(shot_node, query=True, endTime=True)
+            gpu_cache_transform = gpu_cache.getParent()
+            if gpu_cache_transform.name() not in requiered_nodes:
+                pm.delete(gpu_cache_transform)
 
+        # get first and last frame for the shot
+        first_frame = shot_node.getStartTime()
+        last_frame = shot_node.getEndTime()
         # bake animation from constrains before removing references
         self.bakeConstrains(first_frame, last_frame)
 
         # delete all the references if they are not required
         for reference_node in top_reference_nodes:
-            if reference_node not in requiered_nodes:
-                reference_file_path = cmds.referenceQuery(
-                    reference_node, filename=True)
-                cmds.file(reference_file_path, removeReference=True)
+            if reference_node.refNode.name() not in requiered_nodes:
+                reference_node.remove()
 
         # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-        # TODO: Refactor this code, it should only be in either maya
-        # cmds or pymel.
-        # maya.cmds where getting the whole rig instead of the
-        # camera rig tranform node, switching to pymel to
-        # use the instance instead of the name.
 
-        # export the current shot camera as alembic
-        pymel_shot_node = pm.ls(shot_node, type="shot")[0]
-        pymel_camera_node = pymel_shot_node.getCurrentCamera()
-        pymel_camera_node = pm.PyNode(pymel_camera_node)
-        print(pymel_camera_node)
         camera_publish_path = self.get_publish_camera_path(shot_name)
+
         self.export_camera(
-            pymel_camera_node,
+            camera_node,
             camera_publish_path,
             first_frame,
             last_frame
         )
+
+        # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
         self.publish_camera(shot_name, camera_publish_path)
 
         # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -531,26 +499,28 @@ class SequenceSplitter():
         # ready to save file
         shot_publish_scene_path = self.get_publish_scene_path(
             shot_name, "maya_shot_work")
-        cmds.file(rename=shot_publish_scene_path)
-        cmds.file(force=True, type='mayaAscii', save=True)
+        pm.renameFile(shot_publish_scene_path)
+        pm.saveFile(force=True, type='mayaAscii')
 
         self.publish_scene(shot_name)
-
         self.create_breakdown(shot_name, requiered_nodes)
 
     def extract_shot_shots(self):
-        """
-        """
 
-        shots = cmds.ls(type='shot')
+        list_of_shots = pm.ls(type='shot')
 
-        for s in shots:
+        for shot in list_of_shots:
 
-            name = cmds.getAttr('%s.shotName' % s)
-            self.extract_shot(name)
+            #   . . . . . . . . . . . . . . . . . . . . . .
+            shot_node_name = shot.name()
 
-            cmds.file(new=True, force=True)
-            cmds.file(self.sequence_file_path, open=True, force=True)
+            self.extract_shot(shot_node_name)
+
+            #   . . . . . . . . . . . . . . . . . . . . . .
+
+            pm.newFile(force=True)
+
+            pm.openFile(self.sequence_file_path, force=True)
 
 
 splitter = SequenceSplitter(engine, tk, shotgun)
