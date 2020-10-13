@@ -8,14 +8,14 @@ import pymel.core as pm
 # ================================================================
 
 
-class BakeConstraints(object):
+class ConstraintsManager(object):
 
     def __init__(self):
         self.list_of_constraints = self.session_constraints()
 
     #   . . . . . . . . . . . . . . . . . . . . . .
 
-    def process(self, start_frame=None, end_frame=None):
+    def bake_range(self, start_frame=None, end_frame=None):
         control_constraint = []
         delete_constraint = []
 
@@ -36,11 +36,7 @@ class BakeConstraints(object):
                 delete_constraint
             )
 
-            self.bake(
-                start_frame,
-                end_frame,
-                control_constraint
-            )
+            self.bake(start_frame, end_frame, control_constraint)
 
         pm.delete(delete_constraint)
 
