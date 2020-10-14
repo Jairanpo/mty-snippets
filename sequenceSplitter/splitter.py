@@ -187,7 +187,6 @@ class SequenceSplitter():
 
     def __init__(self, engine, tk):
         self.keyframesManager = KeyframesManager(engine, tk)
-        self.constraintManager = ConstraintsManager()
         self.sequence_shot_entities = {}
         self.context_by_shot_name = {}
         self.latest_shot_version_by_shot_name = {}
