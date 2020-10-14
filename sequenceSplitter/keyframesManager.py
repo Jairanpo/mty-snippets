@@ -118,9 +118,7 @@ class KeyframesManager(object):
 
     # ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 
-    def move_animation_with_cutItem_data(
-        self, start, shot
-    ):
+    def move_animation_with_cutItem_data(self, start, shot):
 
         shot_start = shot.getStartTime()
         shot_name = shot.getShotName()
@@ -162,3 +160,4 @@ class KeyframesManager(object):
                     option="insert",
                     timeChange=amount
                 )
+        

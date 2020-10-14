@@ -690,5 +690,5 @@ class SequenceSplitter():
             pm.openFile(self.sequence_file_path, force=True)
 
 
-#splitter = SequenceSplitter(engine, tk)
+# splitter = SequenceSplitter(engine, tk)
 # splitter.extract_shot_shots()
