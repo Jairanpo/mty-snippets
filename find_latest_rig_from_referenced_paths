@@ -1,0 +1,34 @@
+import pprint
+pp = lambda x,depth=6:pprint.PrettyPrinter(depth=depth).pprint(x) 
+import pymel.core as pm 
+import sgtk 
+
+engine = sgtk.platform.current_engine()
+#pp(dir(engine))
+list_of_references=pm.listReferences()
+
+list_of_paths = [ x.path for x in list_of_references]
+
+map_of_publishes = sgtk.util.find_publish(
+    engine.sgtk, 
+    list_of_paths, 
+    fields  = ['entity', 'version_number', 'entity.Asset.code', 'entity.Asset.sg_asset_type', 'published_file_type', 'name']
+)
+pp(map_of_publishes)
+
+for path in list_of_paths:
+    print('Processing...')
+    print('{0}'.format(path))
+    print(map_of_publishes[path])
+    latest = engine.shotgun.find(
+        'PublishedFile', 
+        filters=[
+            ['entity', 'is', map_of_publishes[path]['entity']],
+            ['sg_status_list', 'is', 'apr'],
+            ['published_file_type', 'is', map_of_publishes[path]['published_file_type']],
+            ['name', 'is', map_of_publishes[path]['name']]
+        ],
+        fields=['version_number', 'name'],
+        order=[{'field_name': 'version_number', 'direction': 'desc'}]
+    )
+    pp(latest)
